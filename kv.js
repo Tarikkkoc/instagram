@@ -1,5 +1,11 @@
 function home(){
-    console.log("merhaba");
-    location.href="index.html";
-    
+    location.href="index.html";   
+}
+
+function search(){
+    location.href="search.html";   
+}
+
+const profile = ()=>{
+    location.href = "profile.html"
 }
