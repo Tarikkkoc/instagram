@@ -15,21 +15,13 @@ body{
     height: 25px;
     display: flex;
     align-items: center;
-    /* float: left; */
-    /* padding-left: 21px;
-    padding-top: 14px; */
 }
 
 #icon{
-    /* float: right; */
     width: 55%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* padding-top: 20.67px;
-    padding-bottom: 17.67px;
-    padding-right: 15px; */
-
 }
 
 #wifi_img{
@@ -99,21 +91,21 @@ body{
 
 #post1{
     width: 120%;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-top: 15px;
 }
 
 #pp{
     border-radius: 50%;
     margin-top: 12px;
-    /* float: left; */
+    margin-left: 20%;
 }
 
 #post1{
     width: 100%;
     height: 70px;
     display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 #post_pp{
@@ -148,7 +140,7 @@ body{
 }
 
 #ucnokta{
-
+    margin-right: 12%;
 }
 
 *.story-container{
@@ -185,6 +177,39 @@ img{
     padding: 2px;
 }
 
+.indexplus{
+    position: relative;
+    left: 35%;
+    top: 10%;
+}
+
+.story-container ul li .xstory{
+    width: 71px;
+    height: 70px;
+    border: 4px solid;
+    border-top-color: #E5E5E9;
+    border-left-color: #E5E5E9;
+    border-bottom-color: #E5E5E9;
+    border-right-color: #E5E5E9;
+    border-radius: 28px;
+    position: relative;
+}
+
+.story-container ul li.xhas-story .xstory{
+    padding: 2px;
+    background: linear-gradient(45deg, 0%,  25%,  50%,  75%,  100%);
+}
+
+.story-container ul li .xstory img{
+    /* padding: 4px; */
+    background-color: 0;
+    border: 3.5px solid white;
+    position: relative;
+    border-radius: 24px;
+    width: 63px;
+    height: 65px;
+}
+
 
 .story-container ul li .story{
     width: 71px;
@@ -217,7 +242,7 @@ img{
 .story-container ul li span{
     color: white
     font-weight: 300;
-    font-size: 15px;
+    font-size: 36px;
     max-width: 85px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -254,37 +279,41 @@ img{
 ::-webkit-scrollbar {
     background-color: transparent;
 }
-/* #post{
-    width: 82%;
-    height: 400;
+#post{
+    display: flex;
+    justify-content: center;
+    /* width: 82%;
+    height: 400; */
 
-} */
+}
 
 #tarik{
     margin-top: 3px;
     width: 87%;
-    margin-left: 28px;
     border-radius: 18px;
     outline: none;
 }
 
 #like_area{
-    width: 353px;
+    width: 100%;
     height: 50px;
     margin-top: 8px;
+    display: flex;
+    display: flex;
+    justify-content: space-around;
 }
 
 #likeimg{
     width: 30px;
     height: 40px;
-    float: left;
+
     margin-left: 33px;
 }
 
 #likesayi{
     width: 30px;
     margin-top: 2px;
-    float: left;
+
     width: 35px;
     height: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -294,42 +323,37 @@ img{
 #commentimg{
     width: 30px;
     height: 40px;
-    float: left;
-    margin-left: 27px;
 }
 #like{
     height: 100%;
-    width: 98px;
-    float: left;
+    width: 25%;
+    display: flex;
 }
 
 #comment{
     height: 100%;
-    width: 98px;
-    float: left;
+    width: 20%;
+    display: flex;
 }
 
 #share{
     height: 100%;
-    width: 40px;
-    float: left;
+    width: 45%;
 }
 
 
 
 #save{
     height: 100%;
-    width: 40px;
-    float: left;
+    width: 25%;
     margin-top: 6px;
-    margin-left: 77px;
 }
 
 #commentsayi{
     width: 30px;
     margin-top: 2px;
-    margin-left: 5px;
-    float: left;
+
+
     width: 35px;
     height: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -340,16 +364,14 @@ img{
 #shareimg{
     width: 30px;
     height: 40px;
-    float: left;
-    margin-left: 20px;
 }
 
 #saveimg{
     width: 30px;
     height: 40px;
-    float: left;
-    margin-left: 33px;
-    float: right;
+
+
+
     margin-right: 31px;
 }
 
@@ -372,7 +394,7 @@ img{
 
 #personimg{
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     width: 27px;
     height: 27px;
     background: url(image);
@@ -381,9 +403,9 @@ img{
 }
 
 #personimg2{
-    margin-left: 18px;
+    margin-left: -9px;
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     width: 27px;
     height: 27px;
     background: url(image);
@@ -392,9 +414,9 @@ img{
 }
 
 #personimg3{
-    margin-left: 37px;
+    margin-left: -9px;
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     width: 27px;
     height: 27px;
     background: url(image);
@@ -407,46 +429,44 @@ img{
 }
 
 .begen{
-    width: 353px;
+    width: 100%;
     height: 65px;
+    display: flex;
 }
 
 .liked{
-width: 30%;
+width: 15%;
 height: 40px;
-float: left;
 }
 
 .kisi{
     width: 38%;
     height: 40px;
-    float: left;
     padding-top: 8px;
-    padding-left: 0px;
+    padding-left: 12%;
 }
 .begendi{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .more{
-    width: 19%;
-    height: 40px;
-    float: left;
+    width: 50%;
+    height: 50%;
     margin-top: 6px;
     margin-left: 40px;
 
 }
 .buttonmore{
+    position: relative;
+    top: -5px;
     font-size: 14px;
+    font-weight: 700;
     width: 70%;
-    top: 635px;
-    outline-style: none;
-    outline-color: #e5e8e8;
-    background: #e5e8e8;
+    height: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     border-radius: 16.5px;
     text-align: center;
     border: none;
     cursor: pointer;
-
 
 }
 .yorumlar{
@@ -529,6 +549,8 @@ ul.options li{
  /* search.css */
 #search_phone{
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
     width: 100%;
     height: 96px;
     left: 0px;
@@ -553,35 +575,36 @@ ul.options li{
     justify-content: flex-end;
 }
 
-#search_wifi_img{
-    float: right;
-    float: top;
-    margin-top: 0px;
+
+.butonsrch{
+    position: relative;
+    right: ;
+    top: 8px;
+    width: 80%;
+    height: 45px;
 }
 
-
-
 .search_btn{
-    position: absolute;
-    width: 80%;
+    position: relative;
+    width: 100%;
     height: 42px;
     left: 5%;
-    top: 42px;
+    top: ;
     background: #EAEEF1;
     border-radius: 19px;
 }
 
 .scan_img{
-    position: absolute;
-    right: 6%;
-    top: 53px;
+    position: relative;
+    left: 105%;
+    top: -30px;
     bottom: 91.87%;
 }
 .search_img{
-    position: absolute;
-    left: 77.29%;
-    right: 18.6%;
-    top: 53px;
+    position: relative;
+    left: 95%;
+    right: ;
+    top: -33px;
     bottom: 92.03%;
 }
 
@@ -730,120 +753,120 @@ ul.options li{
 }
 
 .photo1{
-    position: absolute;
+    position: relative;
     width: 45.146%;
     height: 149px;
     left: 4.8%;
-    top: 182px;
+    top: -150px;
     background: url(image.png);
     border-radius: 19px 0px 0px 19px;
 }
 
 .photo2{
-    position: absolute;
+    position: relative;
     width: 44.420%;
     height: 319px;
-    left: 52%;
-    top: 182px;
+    left: 6.5%;
+    top: 20px;
     background: url(image.png);
     border-radius: 0px 19px 19px 0px;
 }
 
 .photo3{
-    position: absolute;
+    position: relative;
     width: 45.146%;
     height: 158px;
     left: 4.8%;
-    top: 343px;
+    top: -140px;
     background: url(image.png);
     border-radius: 19px 0px 0px 19px;
 }
 
 .photo4{
-    position: absolute;
+    position: relative;
     width: 45.146%;
     height: 149px;
-    left: 4.8%;
-    top: 513px;
+    left: -41%;
+    top: 18px;
     background: url(image.png);
     border-radius: 19px 0px 0px 19px;
 }
 
 .photo5{
-    position: absolute;
+    position: relative;
     width: 44.420%;
     height: 149px;
     left: 52%;
-    top: 513px;
+    top: -145px;
     background: url(image.png);
     border-radius: 19px 0px 0px 19px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .photo6{
-    position: absolute;
+    position: relative;
     width: 45.146%;
     height: 158px;
-    left: 4.8%;
-    top: 674px;
+    left: -41%;
+    top: 25px;
     background: url(image.png);
     border-radius: 19px 0px 0px 19px;
 }
 
 .photo7{
-    position: absolute;
+    position: relative;
     width: 44.420%;
     height: 158px;
     left: 52%;
-    top: 674px;
+    top: -135px;
     background: url(image.png);
     border-radius: 19px 0px 0px 19px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .photox{
-    position: absolute;
+    position: relative;
     width: 44.420%;
     height: 158px;
-    left: 52%;
-    top: 845px;
+    left: 7.2%;
+    top: 38px;
     background: url(image.png);
     border-radius: 19px 0px 0px 19px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .photo9{
-    position: absolute;
+    position: relative;
     width: 44.420%;
     height: 330px;
     left: 4.8%;
-    top: 845px;
+    top: -125px;
     background: url(image.png);
     border-radius: 19px 0px 0px 19px;
 }
 
 .photo10{
-    position: absolute;
+    position: relative ;
     width: 44.420%;
     height: 158px;
-    left: 52%;
-    top: 1016px;
+    left: 7%;
+    top: -125px;
     background: url(image.png);
     border-radius: 19px 0px 0px 19px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.searcha{
+/* .searcha{
     float: left;
     margin-left: 25px;
     margin-top: 12.5px;
-}
+} */
 
-.homea{
+/* .homea{
     float: left;
     margin-left: 20px;
     margin-top: 12.5px;
-}
+} */
 
 .profile_alan{
     width: 100;
@@ -1064,6 +1087,8 @@ ul.options li{
     text-align: center;
     letter-spacing: -0.3px;
     color: #040303;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
 }
 
 .statistics{
@@ -1080,6 +1105,8 @@ ul.options li{
     text-align: center;
     letter-spacing: -0.3px;
     color: #040303;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
 }
 
 .contact{
@@ -1096,6 +1123,8 @@ ul.options li{
     text-align: center;
     letter-spacing: -0.3px;
     color: #FFFFFF;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
 }
 
 .profilstory{
@@ -1270,60 +1299,60 @@ ul.iconprf li{
 
 .konsey{
     position: relative;
-    width: 58.253%;
+    width: 56%;
     height: 48.4%;
-    left: 10px;
+    left: 2.5%;
     top: 0px;
     background: url(image.png);
     border-radius: 16px 0px 0px 0px;
 }
 
 .dogu{
-    position: absolute;
-    width: 35.195%;
+    position: relative;
+    width: 35.8%;
     height: 23.4%;
-    left: 62%;
-    top: 0px;
+    left: 3.5%;
+    top: -125px;
     background: url(image.png);
     border-radius: 0px 16px 0px 0px;
 }
 
 .aslan{
-    position: absolute;
-    width: 35.195%;
+    position: relative;
+    width: 36.1%;
     height: 23.4%;
-    left: 62%;
-    top: 25%;
+    left: 60%;
+    top: -122px;
     background: url(image.png);
-    border-radius: 0px 16px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
 }
 .kumar{
-    position: absolute;
-    width: 28.4%;
+    position: relative;
+    width: 27.2%;
     height: 23.4%;
-    left: 1%;
-    top: 252px;
+    left: -34.2%;
+    top: 6.5px;
     background: url(image.png);
-    border-radius: 16px 0px 0px 0px;
+    border-radius: 0px 0px 0px 16px;
 }
 
 .cakirmemati{
-    position: absolute;
-    width: 28.4%;
+    position: relative;
+    width: 28%;
     height: 23.4%;
-    left: 30.7%;
-    top: 252px;
+    left: -33.8%;
+    top: 6.5px;
     background: url(image.png);
 }
 
 .polatkumar{
-    position: absolute;
-    width: 35.195%;
+    position: relative;
+    width: 35.5%;
     height: 23.4%;
-    left: 62%;
-    top: 252px;
+    left: 60.5%;
+    top: -117px;
     background: url(image.png);
-    border-radius: 0px 16px 0px 0px;
+    border-radius: 0px 0px 16px 0px;
 }
 #settingsprfl{
     width: 30%;
